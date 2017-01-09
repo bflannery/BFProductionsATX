@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+.footer {
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1.25rem;
+    margin-top: 6rem;
+    padding: 1rem;
+    border-top: 3px solid grey;
+
+  a {
+    text-decoration: none;
+    color: white;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+  color: white;;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: white;;
+    text-decoration: none;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-github:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+}
+
+.copyright {
+  display: inline;
+  margin: 0 auto;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-nav {
+  display: block;
+  text-align: center;
+  margin-right: 1rem;
+  font-size: 1rem;
+
+}
+@media(min-width: 600px) {
+  .footer {
+    text-align:right;
+    margin-top: 9rem;
+
+  }
+.copyright {
+  display: inline-block;
+  float: left;
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+
+}
+
+.footer-nav {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+  }
+}
+
+@media(min-width: 850px) {
+
+.footer-nav {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+
+}
+.footer {
+  text-align:right;
+    span {
+      margin-right: 2rem;
+    }
+}
+}
