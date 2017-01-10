@@ -1,5 +1,6 @@
 import React from 'react';
 import Scroll from 'react-scroll';
+import ContactForm from '../ContactForm';
 
 export default React.createClass({
   render() {
@@ -7,7 +8,8 @@ export default React.createClass({
     return (
       <div className="contact">
       <Element name="Contact" />
-      <span> Contact </span>
+      <h1>Want to connect? </h1>
+      <ContactForm />
        </div>
     );
   }
