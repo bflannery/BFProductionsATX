@@ -1,14 +1,19 @@
 import React from 'react';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
-import store from './store';
+import Scroll from 'react-scroll';
 
-import App from './Components/Containers/App';
+
 import LandingPage from './Components/Containers/LandingPage';
+import About from './Components/Containers/About';
+import Portfolio from './Components/Containers/Portfolio';
+import Contact from './Components/Containers/Contact';
 
 const router = (
   <Router history={browserHistory}>
-    <Route path='/' component={App}>
-      <IndexRoute component={LandingPage} />
+    <Route path='/Home' component={LandingPage}>
+    <Route path="/About" component = {LandingPage} />
+    <Route path="/Portfolio" component = {LandingPage} />
+    <Route path="/Contact" component = {LandingPage} />
     </Route>
   </Router>
 );

@@ -1,23 +1,57 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { browserHistory } from 'react-router';
+import Scroll from 'react-scroll';
+var Link = Scroll.Link;
+
 
 export default React.createClass({
   getInitialState(){
     return{
       menu:false,
-      contact:false
     };
   },
+
+  routeToLink(e) {
+    let link = e.target.innerHTML.split(' ').join('');
+    browserHistory.push("/" + link);
+  },
+  routeHome() {
+    browserHistory.push("/Home");
+  },
+
   render(){
     let nav= <i className="fa fa-bars" aria-hidden="true" onClick={this.handleMenu}></i>
     if(this.state.menu){
       nav=(
         <nav>
           <i className="fa fa-times" aria-hidden="true" onClick={this.closeMenu}></i>
-          <a onClick={this.closeMenu} href="/"><li className="nav-link">Home</li></a>
-          <a onClick={this.closeMenu}  href="#about"><li className="nav-link">About</li></a>
-          <a onClick={this.closeMenu}  href="#portfolio"><li className="nav-link">Portfolio</li></a>
-          <a onClick={this.openContact}  href="#contact"><li className="nav-link">Contact</li></a>
+          <li className="nav-link">
+        <Link to="Home"
+              smooth={true}
+              duration={400}
+              onClick={this.routeToLink}>Home</Link>
+        </li>
+        <li className="nav-link">
+        <Link to="About"
+              smooth={true}
+              duration={500}
+              offset={-350}
+              onClick={this.routeToLink}>About</Link>
+        </li>
+        <li className="nav-link">
+        <Link to="Portfolio"
+              smooth={true}
+              duration={500}
+              offset={-220}
+              onClick={this.routeToLink}>Portfolio</Link>
+        </li>
+        <li className="nav-link">
+        <Link to="Contact"
+              smooth={true}
+              duration={500}
+              offset={-60}
+              onClick={this.routeToLink}>Contact</Link>
+        </li>
         </nav>
       );
     }
@@ -31,10 +65,33 @@ export default React.createClass({
     }
     return(<div className="nav">
             <ul className="full-nav">
-              <a href="/"><li className="nav-link">Home</li></a>
-              <a href="#about"><li className="nav-link">About</li></a>
-              <a href="#portfolio"><li className="nav-link">Portfolio</li></a>
-              <a onClick={this.openContact}  href="#contact"><li className="nav-link">Contact</li></a>
+            <li className="nav-link">
+          <Link to="Home"
+                smooth={true}
+                duration={400}
+                onClick={this.routeToLink}>Home</Link>
+        </li>
+        <li className="nav-link">
+          <Link to="About"
+                smooth={true}
+                duration={500}
+                offset={-350}
+                onClick={this.routeToLink}>About</Link>
+        </li>
+        <li className="nav-link">
+          <Link to="Portfolio"
+                smooth={true}
+                duration={500}
+                offset={-220}
+                onClick={this.routeToLink}>Portfolio</Link>
+        </li>
+        <li className="nav-link">
+          <Link to="Contact"
+                smooth={true}
+                duration={500}
+                offset={-60}
+                onClick={this.routeToLink}>Contact</Link>
+        </li>
             </ul>
             {nav}
           </div>
@@ -47,17 +104,6 @@ export default React.createClass({
   },
   closeMenu(){
     this.setState({
-      menu:false
-    });
-  },
-  openContact(){
-    this.setState({
-      contact:true
-    });
-  },
-  closeContact(){
-    this.setState({
-      contact:false,
       menu:false
     });
   }
