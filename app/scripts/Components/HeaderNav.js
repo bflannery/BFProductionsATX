@@ -16,7 +16,7 @@ export default React.createClass({
     browserHistory.push("/" + link);
   },
   routeHome() {
-    browserHistory.push("/Home");
+    browserHistory.push("/");
   },
 
   render(){

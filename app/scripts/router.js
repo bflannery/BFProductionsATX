@@ -10,7 +10,7 @@ import Contact from './Components/Containers/Contact';
 
 const router = (
   <Router history={browserHistory}>
-    <Route path='/Home' component={LandingPage}>
+    <Route path='/' component={LandingPage}>
     <Route path="/About" component = {LandingPage} />
     <Route path="/Portfolio" component = {LandingPage} />
     <Route path="/Contact" component = {LandingPage} />
