@@ -1,0 +1,30 @@
+.projects-container {
+  margin-bottom: 1rem;
+}
+
+.project-images-container {
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+.arrow-div {
+  display: inline-block;
+}
+
+.prev-div {
+  margin-right: 1rem;
+}
+
+.next-div {
+    margin-left: 1rem;
+  }
+
+.project-image {
+  display: inline-block;
+  height: 10rem;
+  width: 50%;
+  vertical-align: middle;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -3,20 +3,22 @@ import { browserHistory } from 'react-router';
 
 import Scroll from 'react-scroll';
 
-import Examples from '../../Collections/projectsCollection';
-import PortfolioPreview from '../PortfolioPreview';
+import Projects from '../../Collections/projectsCollection';
+import Carousel from '../Carousel';
 
 var Element = Scroll.Element;
 
 export default React.createClass({
+
   render() {
-    let portfolioPreview = Examples.map((example, i) => {
-      return <PortfolioPreview key={i} example={example}/>;
+
+    let portfolioPreview = Projects.map((project, i) => {
+      return <Carousel key={i} project={project}/>;
     });
     return (
       <div className="portfolio-page">
         <Element name="Portfolio" />
-        <ul className="portfolio-sides">
+        <ul>
           {portfolioPreview}
         </ul>
       </div>
