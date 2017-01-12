@@ -60,11 +60,11 @@ export default React.createClass({
       if (this.state.i === i) {
         currentImg = 'current-image';
       }
-      return (<li key={i} id={currentImg} className="slider-btn-li" onClick={this.skipToImg} value={i}></li>)
+      return (<li key={i} id={currentImg} className="slider-button" onClick={this.skipToImg} value={i}></li>)
     });
     return (
-      <div>
-        <li className="projects-container">
+      <div className="project-container">
+
           <h2 className="project-heading" onClick={this.routeLiveSite}>
             <a className="project-link" href={this.props.project.url}>{this.props.project.name}</a>
           </h2>
@@ -76,14 +76,13 @@ export default React.createClass({
                 </figure>
             <div className="arrow-div next-div" onClick={this.slideLeft}><i className="fa fa-arrow-right" aria-hidden="true" onClick={this.slideLeft}></i></div>
           </div>
-          </li>
         {
         // <section className="next-btns">
         //
         //
         // </section>
         }
-        <ul className="slider-btn-ul">
+        <ul className="slider-container">
           {sliderBtns}
         </ul>
         <figcaption className="project-caption">

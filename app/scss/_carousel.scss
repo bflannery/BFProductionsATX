@@ -2,6 +2,10 @@
   margin-bottom: 1rem;
 }
 
+.project-container {
+  text-align: center;
+}
+
 .project-images-container {
   margin: 1rem 0rem;
   text-align: center;
@@ -21,10 +25,40 @@
 
 .project-image {
   display: inline-block;
-  height: 10rem;
-  width: 50%;
+  height: 13rem;
+  width: 78%;
   vertical-align: middle;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.slider-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.slider-button {
+  height: 1rem;
+  width: 1rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+   &:hover {
+     cursor: pointer;
+   }
+}
+
+#current-image {
+  background: red;
+}
+
+.project-caption {
+  margin: 2rem;
 }

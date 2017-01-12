@@ -36,7 +36,7 @@ let projects = [
     hardest: ''
   },
   {
-    name: 'Know-Things-Pardy',
+    name: 'Jeopardy',
     url: 'http://jeopardy-game-tiy.surge.sh/#/',
     githubUrl: 'https://github.com/bflannery/Knowthings-Pardy',
     image: '../../assets/images/knowthings/jeo-1.png',
