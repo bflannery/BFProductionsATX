@@ -7,12 +7,11 @@
     display: none;
 }
 
-nav {
+.nav {
     display: inline-block;
     font-size: 1.3rem;
     position: absolute;
     right: 0;
-    background: rgba(0,0,0,.5);
     width: 50%;
     position: fixed;
     z-index: 3;
@@ -22,7 +21,7 @@ nav {
     }
 
     .nav-link {
-        color: white;
+    
         list-style: none;
         margin-bottom: 1rem;
         position: relative;

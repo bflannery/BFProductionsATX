@@ -1,6 +1,7 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
 import Scroll from 'react-scroll';
+import $ from 'jquery';
 var Link = Scroll.Link;
 
 
@@ -9,14 +10,6 @@ export default React.createClass({
     return{
       menu:false,
     };
-  },
-
-  routeToLink(e) {
-    let link = e.target.innerHTML.split(' ').join('');
-    browserHistory.push("/" + link);
-  },
-  routeHome() {
-    browserHistory.push("/");
   },
 
   render(){
@@ -106,5 +99,32 @@ export default React.createClass({
     this.setState({
       menu:false
     });
-  }
+  },
+    routeToLink(e) {
+      let link = e.target.innerHTML.split(' ').join('');
+      browserHistory.push('/' + link);
+    },
+    routeHome() {
+      browserHistory.push('/');
+    },
+
 });
+
+// nav scroll
+// componentDidMount() {
+//   $(window).scroll(function() {
+//       if ($(window).scrollTop() === 0){
+//           $('.nav-link').css({
+//             'opacity': '1',
+//             'color':'white'});
+//       }
+//       else if ($(window).scrollTop() < 768) {
+//           $('.nav-link').css({
+//             'color':`black, ${$(window).scrollTop() / 2000 + 0.2})`});
+//       } else {
+//         $('.nav-link').css({
+//           'opacity': '.5',
+//           'color':'black'});
+//       }
+//   });
+// },
