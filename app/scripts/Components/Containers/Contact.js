@@ -8,7 +8,7 @@ export default React.createClass({
     return (
       <div className="contact">
       <Element name="Contact" />
-      <h1>Want to connect? </h1>
+      <h3> Want to connect? </h3>
       <ContactForm />
        </div>
     );

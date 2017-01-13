@@ -13,7 +13,7 @@ export default React.createClass({
             <input type="text"   ref="subject" placeholder="Subject"/>
           </div>
           <div className="right-contact">
-            <textarea type="text" ref="message" placeholder="Message" rows='11' cols='50'></textarea>
+            <textarea type="text" ref="message" placeholder="Message" rows='15' cols='38'></textarea>
             </div>
             <input type="submit" value="Send Message"/>
         </form>

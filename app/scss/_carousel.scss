@@ -4,6 +4,12 @@
 
 .project-container {
   text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2rem;
+}
+
+.project-heading {
+  margin-top: 2rem;
 }
 
 .project-link {
@@ -25,10 +31,16 @@
 
 .prev-div {
   margin-right: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .next-div {
     margin-left: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
 .project-image {
@@ -67,8 +79,17 @@
   background: red;
 }
 
+.project-caption-container {
+  margin-top: 2rem;
+}
+
 .project-caption {
-  margin: 2rem;
+  margin: auto;
+  width: 85%;
+}
+
+.portfolio-links-container {
+    margin: 1rem 0;
 }
 
 .portfolio-links {

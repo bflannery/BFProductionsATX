@@ -55,6 +55,7 @@ export default React.createClass({
   },
   render() {
     console.log(this.state)
+    console.log(this.props)
     let sliderBtns = this.state.images.map((url, i) => {
       let currentImg;
       if (this.state.i === i) {
@@ -85,9 +86,9 @@ export default React.createClass({
         <ul className="slider-container">
           {sliderBtns}
         </ul>
-        <figcaption className="project-caption">
-        <p className="p-project-caption">{this.props.project.aboutBody}</p>
-        <ul className="icons-ul project-links-ul">
+        <figcaption className="project-caption-container">
+        <p className="project-caption">{this.props.project.pitch}</p>
+        <ul className="portfolio-links-container">
           <li className="portfolio-links">
             <a className="portfolio-live-link project-live-link" href={this.props.project.url}>
               <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
