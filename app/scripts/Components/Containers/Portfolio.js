@@ -11,7 +11,6 @@ var Element = Scroll.Element;
 export default React.createClass({
 
   render() {
-
     let portfolioPreview = Projects.map((project, i) => {
       return <Carousel key={i} project={project}/>;
     });

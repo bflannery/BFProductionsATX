@@ -1,5 +1,6 @@
 let projects = [
   {
+    id: 'one',
     name: 'Tulip & Ivy',
     url: 'http://tulip-and-ivy.surge.sh/',
     githubUrl: 'https://github.com/bflannery/Tulip-And-Ivy',
@@ -13,6 +14,7 @@ let projects = [
     hardest: ''
       },
   {
+    id: 'two',
     name: 'Gym Tracker',
     url: 'http://gym-tracker.surge.sh/',
     githubUrl: 'https://github.com/bflannery/Gym-Tracker',
@@ -26,6 +28,7 @@ let projects = [
     hardest: ''
   },
   {
+    id: 'three',
     name: 'Bring the Band',
     url: 'http://bring-the-band-tiy.surge.sh/#/',
     githubUrl: 'https://github.com/bflannery/Bring-The-Band',
@@ -39,6 +42,7 @@ let projects = [
     hardest: ''
   },
   {
+    id: 'four',
     name: 'Jeopardy',
     url: 'http://jeopardy-game-tiy.surge.sh/#/',
     githubUrl: 'https://github.com/bflannery/Knowthings-Pardy',

@@ -65,11 +65,12 @@ export default React.createClass({
     });
     return (
       <div className="project-container">
-
           <h2 className="project-heading" onClick={this.routeLiveSite}>
             <a className="project-link" href={this.props.project.url}>{this.props.project.name}</a>
           </h2>
-          <div className="project-images-container">
+          <div className= {this.props.project.id}>
+          <div className="project-visual-container">
+            <div className="project-images-container">
             <div className="arrow-div prev-div" onClick={this.slideRight}><i className="fa fa-arrow-left" aria-hidden="true" onClick={this.slideRight}></i></div>
               <figure className="project-image"
                   id={this.state.slide}
@@ -77,6 +78,7 @@ export default React.createClass({
                 </figure>
             <div className="arrow-div next-div" onClick={this.slideLeft}><i className="fa fa-arrow-right" aria-hidden="true" onClick={this.slideLeft}></i></div>
           </div>
+
         {
         // <section className="next-btns">
         //
@@ -86,6 +88,7 @@ export default React.createClass({
         <ul className="slider-container">
           {sliderBtns}
         </ul>
+        </div>
         <figcaption className="project-caption-container">
         <p className="project-caption">{this.props.project.pitch}</p>
         <ul className="portfolio-links-container">
@@ -103,7 +106,7 @@ export default React.createClass({
           </li>
         </ul>
         </figcaption>
-
+        </div>
       </div>
     );
   }

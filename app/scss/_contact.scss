@@ -10,13 +10,14 @@
 }
 
 .left-contact {
+    margin: auto;
     width: 85%;
     text-align: center;
-    display: inline-block;
+
 
     input {
         display: inline-block;
-        width: 93.5%;
+        width: 85%;
         height: 2rem;
         font-size: 1rem;
         margin: 0.5rem 0;
@@ -26,10 +27,49 @@
 .right-contact {
     width: 85%;
     text-align: center;
-    display: inline-block;
-    margin: 1rem 0;
+    margin: 1rem auto;
 
     textarea {
+        display: inline-block;
+        height: 15rem;
+        width: 85%;
         font-size: 1rem;
     }
+}
+
+@media(min-width: 683px){
+  .contact-form {
+    margin: auto;
+    width: 75%;
+  }
+}
+
+@media(min-width: 850px) {
+  .contact-form {
+    width: 100%;
+  }
+  .left-contact {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+      input {
+        height: 3rem;
+        margin: 0 0 1rem;
+      }
+  }
+  .right-contact {
+    margin: 0rem;
+    width: 50%;
+    display: inline-block;
+      textarea {
+        height: 12rem;
+        width: 95%;
+      }
+  }
+}
+
+@media(min-width: 1000px) {
+  .contact-form {
+    width: 90%;
+  }
 }

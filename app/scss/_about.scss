@@ -20,31 +20,31 @@
 
 }
 
-@media(min-width: 650px) {
+@media(min-width: 683px) {
+
+  .about {
+    padding: 4rem 0rem;
+    margin-top: 0rem;
+  }
 
   .about-container {
+    vertical-align: middle;
     display: inline-block;
-    margin-top: 2rem;
     margin-right: 2rem;
     width: 50%;
   }
 
   .avatar {
-    width: 35%;
-    margin-top: 2rem;
+    vertical-align: middle;
+    width: 30%;
+    margin: 0rem;
+
 
   }
 }
 
-
-@media(min-width: 800px) {
-  .about-container {
-  vertical-align: top;
-  margin-top: 1rem;
-  }
-
-  .avatar {
-    margin: 1rem;
+@media(min-width: 850px) {
+  .avatar{
     width: 25%;
   }
 
@@ -52,7 +52,6 @@
 
 @media(min-width: 1000px) {
   .avatar {
-    margin: 1rem;
     width: 15%;
   }
 }
