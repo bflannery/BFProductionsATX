@@ -88,7 +88,7 @@ export default React.createClass({
         <figcaption className="project-caption">
         <p className="p-project-caption">{this.props.project.aboutBody}</p>
         <ul className="icons-ul project-links-ul">
-          <li>
+          <li className="portfolio-links">
             <a className="portfolio-live-link project-live-link" href={this.props.project.url}>
               <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
               <label className="app-label"> Live site</label>
