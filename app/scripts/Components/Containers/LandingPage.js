@@ -17,17 +17,7 @@ export default React.createClass({
     let path = this.props.route.path.slice(1);
     let offset;
     let route = this.props.route.path.slice(1);
-    if (route === 'Home') {
-      offset = 0;
-    } else if (route === 'About') {
-      offset = -300;
-    } else if (route === 'Portfolio') {
-      offset = -220;
-    } else if (route === 'Connect') {
-      offset = -225;
-    } else if (route === 'Contact') {
-      offset = -60;
-    }
+
     scroller.scrollTo(`${path}`, {
       duration: 100,
       offset: offset,

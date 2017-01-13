@@ -7,9 +7,9 @@ export default React.createClass({
     let Element = Scroll.Element;
     return (
       <div className="contact">
-      <Element name="Contact" />
       <h3> Want to connect? </h3>
       <ContactForm />
+      <Element name="Contact" />
        </div>
     );
   }

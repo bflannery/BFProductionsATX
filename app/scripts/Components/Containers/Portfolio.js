@@ -18,8 +18,9 @@ export default React.createClass({
 
       <div className="portfolio-page">
         <h3 className="recent-title"> Recent Work </h3>
-        <Element name="Portfolio" />
+          <Element name="Portfolio" />
         <ul className="projects-container">
+
           {portfolioPreview}
         </ul>
       </div>
