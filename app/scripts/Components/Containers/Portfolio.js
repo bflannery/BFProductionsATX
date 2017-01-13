@@ -15,7 +15,11 @@ export default React.createClass({
       return <Carousel key={i} project={project}/>;
     });
     return (
+
       <div className="portfolio-page">
+      <div className="recent-hero" >
+        <h2> Recent Work </h2>
+      </div>
         <Element name="Portfolio" />
         <ul className="projects-container">
           {portfolioPreview}

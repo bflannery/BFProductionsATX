@@ -13,6 +13,8 @@
 }
 
 .project-link {
+  font-family: 'alieron';
+  font-size: 3rem;
   color: black;
   text-decoration: none;
 }
@@ -110,11 +112,11 @@
   }
 
   .one, .three {
-    margin: 4rem 0 2rem 0;
+    margin: 4rem 0 0rem 0;
     .project-visual-container {
       float:right;
       position: relative;
-      bottom: 3rem;
+      bottom: 0rem;
     }
   }
   .project-visual-container {
@@ -129,6 +131,7 @@
   .project-caption-container {
     vertical-align: middle;
     margin-top: 0;
+    margin-bottom: 1rem;
     width: 50%;
     display: inline-block;
   }
@@ -143,8 +146,22 @@
 
 }
 
+@media(min-width: 950px) {
+  .one, .three {
+    .project-visual-container {
+      bottom: 1.25rem;
+    }
+  }
+}
+
 @media(min-width: 1100px) {
   .project-image {
     width: 50%;
+  }
+  .one, .three {
+    margin: 3rem 0 2.5rem 0;
+    .project-visual-container {
+      bottom: 1rem;
+    }
   }
 }
