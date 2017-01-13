@@ -48,14 +48,6 @@ export default React.createClass({
         </nav>
       );
     }
-    if(this.state.contact){
-      nav=(
-        <div>
-          <i id="close" className="fa fa-times" aria-hidden="true" onClick={this.closeContact}></i>
-          <Contact/>
-        </div>
-      );
-    }
     return(<div className="nav">
             <ul className="full-nav">
             <li className="nav-link">

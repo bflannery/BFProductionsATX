@@ -10,11 +10,9 @@
 .nav {
     display: inline-block;
     font-size: 1.3rem;
-    position: absolute;
-    right: 0;
+    float: right;
     width: 50%;
-    position: fixed;
-    z-index: 3;
+
 
     a {
         text-decoration: none;
