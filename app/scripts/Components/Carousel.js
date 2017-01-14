@@ -98,7 +98,7 @@ export default React.createClass({
               <label className="app-label"> Live site</label>
             </a>
           </li>
-          <li>
+          <li className="portfolio-links">
             <a className="portfolio-live-link project-live-link" href={this.props.project.githubUrl}>
               <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
               <label className="app-label"> GitHub</label>

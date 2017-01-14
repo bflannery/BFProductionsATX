@@ -10,7 +10,7 @@
   padding-bottom: 2rem;
   margin: 3rem auto;
   width: 85%;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px groove lightgray;
     .four {
       border: none;
     }
@@ -18,16 +18,17 @@
 
 .project-heading {
   margin-top: 2rem;
+
 }
 
 .project-link {
   font-size: 3rem;
-  color: black;
+  color: #233237;
   text-decoration: none;
 }
 
 .project-link:visited {
-  color: black;
+  color: #233237;
 }
 .project-images-container {
   margin: 1rem 0rem;
@@ -62,6 +63,10 @@
   background-repeat: no-repeat;
 }
 
+.one .project-image {
+    border: 1px solid lightgray;
+}
+
 .slider-container {
   padding: 0;
   margin: 0;
@@ -79,7 +84,7 @@
   height: 1rem;
   width: 1rem;
   background: white;
-  border: 2px solid black;
+  border: 2px solid #233237;
   border-radius: 50%;
    &:hover {
      cursor: pointer;
@@ -87,7 +92,8 @@
 }
 
 #current-image {
-  background: red;
+  background: #984B43;
+
 }
 
 .project-caption-container {
@@ -105,6 +111,16 @@
 
 .portfolio-links {
   display: inline-block;
+  margin-right: 1rem;
+    a {
+  display: inline-block;
+    color: #233237;
+  }
+}
+
+
+.portfolio-links a:visited {
+    color: #233237;
 }
 
 @media(min-width: 683px) {
@@ -171,20 +187,24 @@
 @media(min-width: 950px) {
   .one, .three {
     .project-visual-container {
-      bottom: 1.25rem;
+      bottom: 1rem;
     }
   }
 }
 
 @media(min-width: 1100px) {
   .project-image {
-    width: 67%;
+    height: 19rem;
+    width: 79%;
   }
 
   .one, .three {
     margin: 5rem 0 2.5rem 0;
     .project-visual-container {
-      bottom: 2rem;
+      bottom: 1rem;
+    }
+    .project-caption-container {
+      margin-top: 3rem;
     }
   }
 }
