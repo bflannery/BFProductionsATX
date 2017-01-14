@@ -1,22 +1,24 @@
 .portfolio-page {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 11rem;
 
+}
+.recent-title-container {
+  background-image: url('../../assets/images/hero4.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 25rem;
 }
 
 .recent-title {
   text-align: center;
   display: inline-block;
   font-size: 2rem;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  margin: 7rem 0rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 9rem auto;
   padding: 2rem 3rem;
+  color: white;
 
-}
 
-@media(min-width: 683px) {
-  .recent-title {
-  margin: 6rem 0rem 8rem 0;
-}
 }

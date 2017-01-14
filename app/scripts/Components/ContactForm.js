@@ -15,7 +15,7 @@ export default React.createClass({
           <div className="right-contact">
             <textarea type="text" ref="message" placeholder="Message"></textarea>
             </div>
-            <input type="submit" value="Send Message"/>
+            <input type="submit"  className="submit-form" value="Send Message"/>
         </form>
       );
   },
