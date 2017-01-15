@@ -18,11 +18,10 @@ export default React.createClass({
 
       <div className="portfolio-page">
       <div className="recent-title-container">
+      <Element name="Portfolio" />
         <h3 className="recent-title"> Recent Work </h3>
-      </div>  
-          <Element name="Portfolio" />
+      </div>
         <ul className="projects-container">
-
           {portfolioPreview}
         </ul>
       </div>

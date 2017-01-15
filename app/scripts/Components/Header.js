@@ -11,7 +11,6 @@ export default React.createClass({
         <div className="intro-container">
         <h3> Im Brian </h3>
         <h4> I take the photos & write the code </h4>
-        <span> read more </span>
         </div>
         </div>
     );
