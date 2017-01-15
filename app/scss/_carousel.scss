@@ -93,7 +93,6 @@
 
 #current-image {
   background: #984B43;
-
 }
 
 .project-caption-container {
@@ -103,6 +102,7 @@
 .project-caption {
   margin: auto;
   width: 85%;
+  font-size: 1rem;
 }
 
 .portfolio-links-container {
@@ -130,7 +130,7 @@
 
   .project-heading {
     margin: 4rem 0rem;
-  .project-link {
+      .project-link {
     font-size: 5rem;
   }
 
@@ -138,6 +138,9 @@
     margin-bottom: 7rem;
   }
 }
+  .project-caption {
+    font-size: 1.5rem;
+  }
 }
 
 @media(min-width:850px) {
@@ -189,6 +192,10 @@
     .project-visual-container {
       bottom: 1rem;
     }
+  }
+
+  .project-caption {
+    font-size: 2rem;
   }
 }
 
