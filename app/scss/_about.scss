@@ -1,6 +1,30 @@
 .about {
+  text-transform: none;
     text-align: center;
     display: inline-block;
+    h3 {
+      font-size: 2rem;
+    }
+      span {
+        margin-top: 1rem;
+        display: inline-block;
+        font-size: 1.25rem;
+        padding: .5rem 0rem;
+      }
+
+}
+
+ .port-links {
+  color: black;
+  text-decoration: underline;
+}
+
+.port-links:visited {
+  color: black
+}
+
+.about a:hover{
+  cursor: pointer;
 }
 
 .about-container {

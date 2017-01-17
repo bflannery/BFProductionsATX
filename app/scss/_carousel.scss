@@ -30,6 +30,11 @@
 .project-link:visited {
   color: #233237;
 }
+
+.project-link:hover {
+  cursor: pointer;
+}
+
 .project-images-container {
   margin: 1rem 0rem;
   text-align: center;
@@ -113,7 +118,7 @@
   display: inline-block;
   margin-right: 1rem;
     a {
-  display: inline-block;
+    display: inline-block;
     color: #233237;
   }
 }
@@ -121,6 +126,10 @@
 
 .portfolio-links a:visited {
     color: #233237;
+}
+
+.portfolio-links:hover {
+  cursor: pointer;
 }
 
 @media(min-width: 683px) {
