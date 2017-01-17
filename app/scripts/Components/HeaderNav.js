@@ -68,7 +68,10 @@ export default React.createClass({
                 smooth={true}
                 duration={500}
                 offset={-220}
-                onClick={this.routeToLink}>Portfolio</Link>
+                onClick={this.routeToLink}>Design</Link>
+        </li>
+        <li className="nav-link">
+          <a href="http://www.bfproductions.info/lifestyle/"> Photography </a>
         </li>
         <li className="nav-link">
           <Link to="Contact"
