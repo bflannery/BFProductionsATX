@@ -7,7 +7,7 @@ export default React.createClass({
     return (
       <div className="about">
         <div className="about-container">
-          <h3> Hi! Im Brian! </h3>
+
           <span>
             I’m an Austin based Web Developer and Photographer. I love coding, photography, quoting movies I’ve seen a million times, coffee, and living a healthy lifestyle in Austin, Texas.
           </span>
@@ -17,6 +17,7 @@ export default React.createClass({
           <span>
             I like to work on code challenges and showcase my work as <a href='https://gist.github.com/bflannery' className="port-links">Gists</a>. I keep my professional life on <a href='https://www.linkedin.com/in/bflanneryatx' className="port-links">LinkedIn</a>, let my mind float on <a href='https://twitter.com/flanst1gram' className="port-links">Twitter</a>,  and I connect with my family & friends on <a href='https://www.facebook.com/brian.flannery.56211' className="port-links">Facebook</a>.
           </span>
+          <Element name="About" />
           <span>
             Being an avid photographer, I post my work for others to follow on <a href='https://www.instagram.com/bfproductionsatx/' className="port-links">Instagram</a> and <a href='https://500px.com/brianflannery' className="port-links">500px</a> (for those whose focus on the little details) and my videos on <a href='https://vimeo.com/bfproductions' className="port-links">Vimeo</a>. Check out my <a href='http://www.bfproductions.info/skyline/' className="port-links">BFProductions</a> photography portfolio!
           </span>
@@ -25,7 +26,7 @@ export default React.createClass({
           </span>
         </div>
         <img className="avatar" src='../../assets/images/about-avatar.jpg'/>
-        <Element name="About" />
+
         <div className="social-container">
           <ul className="about-social-icons">
             <li><a href="https://github.com/bflannery" className="about-social-icon"> <i className="fa fa-github"></i></a></li>
